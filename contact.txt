@@ -1,0 +1,159 @@
+*CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Contact{z-index: 4;}
+
+.contact-container{
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.contact-btn1{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: aliceblue;
+    letter-spacing: 1px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.popup1{
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-overlay1{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.main-popup1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+
+}
+
+.pop-contact1{
+    width: 30%;
+}
+
+.popup1 .close-btn1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 10px;
+    padding: 5px 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    border: .6px solid black;
+    transition: .7s ease all;
+}
+
+.popup1 .close-btn1:hover{
+    background-color: black;
+    color: beige;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+HTML
+
+
+<div class="contact-container" id="Contact">
+      <div class="btn1">
+        <button class="contact-btn1">Contact us</button>
+      </div>
+      <div class="popup1">
+        <div class="popup-overlay1">
+          <div class="main-popup1">
+            <div class="pop-contact1">
+              <span class="close-btn1">&times;</span>
+              <div class="form">
+                <form action="" method="post">
+                  <label for="">Name</label>
+                  <input type="text">
+                  <label for="">Mail ID</label>
+                  <input type="email" name="" id="">
+                  <label for="">Message</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+JavaScript
+
+
+const contact_btn1 = document.querySelector(".contact-btn1")
+const close_btn1 = document.querySelector(".close-btn1")
+const popup1 = document.querySelector(".popup1")
+const main_popup1 = document.querySelector(".main-popup1")
+const call_btn = document.querySelector(".call button")
+
+contact_btn1.addEventListener("click", ()=>{
+    popup1.style.display = "flex"
+    main_popup1.style.cssText = "animation: slide-in .5s ease;animation-fill-mode: forwards;"
+})
+
+call_btn.addEventListener("click", ()=>{
+    popup1.style.display = "flex"
+    main_popup1.style.cssText = "animation: slide-in .5s ease;animation-fill-mode: forwards;"
+})
+
+close_btn1.addEventListener("click", ()=>{
+    main_popup1.style.cssText = "animation: slide-out .5s ease;animation-fill-mode: forwards;"
+    setTimeout(()=>{
+        popup1.style.display = 'none'
+    }, 600)
+})
+
+window.addEventListener('click', (e)=>{
+    if(e.target == main_popup1){
+        main_popup1.style.cssText = "animation: slide-out .5s ease;animation-fill-mode: forwards;"
+    setTimeout(()=>{
+        popup1.style.display = 'none'
+    }, 600)
+    }

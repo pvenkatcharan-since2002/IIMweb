@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="/">IIM</a></div>
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">
+        <p>&#9776;</p>
+        <p>&#x2715;</p>
+      </label>
+
+      <div class="menu">
+        <di class="menu-all">
+          <ul>
+            <li><a href="#About_us" id="about-us">About Us</a></li>
+            <li><a href="#Blog" id="blog">Blog</a></li>
+            <li><a href="#Projects" id="projects">Projects</a></li>
+            <li><a href="members/members.html" id="contacts">Members</a></li>
+            <div class="dot"></div>
+            <div class="dot1"></div>
+          </ul>
+        </di>
+      </div>
+    </ul>
+  </nav>
+
+  <!-- Title  -->
+  <section class="main-title">
+    <div class="wave-title">
+      <h1>Idea</h1>
+      <h1 class="middle">Incubator</h1>
+      <h1>MGIT</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wave" id="wave1" style="--i:1"></div>
+    <div class="wave" id="wave2" style="--i:2"></div>
+    <div class="wave" id="wave3" style="--i:3"></div>
+    <div class="wave" id="wave4" style="--i:4"></div>
+    <div class="wave" id="wave5" style="--i:6"></div>
+  </section>
+
+  <div class="pages">
+
+    <!-- Sections -->
+    <!-- About Us -->
+    <div class="section" id="About_us">
+      <div class="box">
+        <div class="container">
+          <div class="content-section">
+            <div class="title">
+              <h1>About Us</h1>
+            </div>
+            <div class="content">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt quas repudiandae natus impedit?
+                Adipisci sint modi, sed velit facere est aliquam, a voluptatum fuga quasi non saepe asperiores
+                obcaecati?
+              </p>
+
+            </div>
+          </div>
+          <div class="image-section">
+            <img src="img.jfif">
+          </div>
+          <div class="button">
+            <a href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seperator"></div>
+
+    <!-- Blog -->
+    <div class="section" id="Blog">
+      <div class="seperator"></div>  
+      <div class="box">
+        <div class="container">
+          <div class="content-section">
+            <div class="title">
+              <h1>Blog</h1>
+            </div>
+            <div class="content">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt quas repudiandae natus impedit?
+                Adipisci sint modi, sed velit facere est aliquam, a voluptatum fuga quasi non saepe asperiores
+                obcaecati?
+              </p>
+              <div class="button">
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="image-section">
+            <img src="img.jfif">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section" id="Projects">
+      <div class="box">
+        <div class="container">
+          <div class="content-section">
+            <div class="title">
+              <h1>Projects</h1>
+            </div>
+            <div class="content">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt quas repudiandae natus impedit?
+                Adipisci sint modi, sed velit facere est aliquam, a voluptatum fuga quasi non saepe asperiores
+                obcaecati?
+              </p>
+              <div class="button">
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="image-section">
+            <img src="img.jfif">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Image Slider -->
+    <div class="section contact slider" id="Slider">
+      <div class="image_profile">
+      </div>
+      <div class="testimonial_box">
+        <div class="btn_left">
+          <button>&#8592;</button>
+        </div>
+        <div class="btn_right">
+          <button>&#8594;</button>
+        </div>
+        <div class="testimonial_matter">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem iure quo aspernatur perspiciatis,
+          delectus maxime magnam voluptates repellendus laborum libero non enim alias molestiae facere. Minima et
+          voluptatum repellat perferendis atque natus soluta, doloribus corporis amet ducimus animi est voluptas.
+        </div>
+      </div>
+  
+  <!-- Contact -->
+  <div class="contact-page" id="contact">
+    <div class="contact-us">
+      <div class="mobile-no">
+        <ul>
+          <li><b>Contact Us</b></li>
+          <li>MubashirUddin : +91 9121606894</li>
+          <li>Goli Prerana  : +91 8309505249</li>
+          <li>P V Charan    : +91 7382716107</li>
+          <li>ideaincubator@mgit.ac.in</li>
+        </ul>
+      </div>
+      <div class="msg-form">
+        <form method="POST" action="form.php">
+          <input type="text" placeholder="Your Name" name="name" id="name">
+          <input type="email" placeholder="Your Email" name="mail" id="mail">
+          <input type="text" placeholder="Subject" name="subject" id="subject">
+          <br>
+          <textarea cols="75" rows="10" placeholder="Your Message" name="message" id="message"></textarea>
+          <br>
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    
+  <!-- Announcement Btn-->
+  <div class="announcement">
+      <button></button>
+  </div>
+
+  <!-- Announcement Block -->
+  <div class="announce">
+    <div class="announce-matter">
+      <p>
+        <h3>Shark Tank MGIT</h3>
+        You'll have the opportunity to showcase your creativity, innovation, and business acumen to a panel of 
+        experienced judges who are startup founders themselves 
+        <a href="announcement/announcement.html" target="_blank"><button class="kmore">Know More</button></a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Contact Btn -->
+  <div class="call">
+    <a href="#contact">
+      <button></button>
+    </a>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
