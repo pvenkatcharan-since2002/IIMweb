@@ -1,2 +1,6 @@
 PICK A TASK FROM HERE!
-
+--> Remove space b/w waves and container
+--> Handle text overflow occuring in mobile verion.
+-->find and attach good gallary template to Gallery button in taskbar and edit it that it suits home page.
+-->Find and attach good template for members page to include image and content about every member
+Note: Add any task that you find to be done on it..
