@@ -1,4 +1,13 @@
-# Exsisting Issues
 
+# Exsisting Issues
+PICK A TASK FROM HERE!
 ### 1. Panel scroll does not overlay text: 
 On the main page ["https://ideaincubatormgit.in/#About_us"]. The text Idea Incubator Mgit is not fully overlayed (covered) by the scrolling panel.
+### 2. Remove space b/w waves and container
+### 3. Handle text overflow occuring in mobile verion.
+### 4. find and attach good gallary template to Gallery button in taskbar and edit it that it suits home page.
+### 5. Find and attach good template for members page to include image and content about every member
+Note: Add any task that you find to be done on it..
+
+
+
