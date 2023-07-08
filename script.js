@@ -35,6 +35,33 @@ if(window.innerWidth < 768){
     })
 }
 
+//Mobile port fix
+function updateTitles() {
+  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+  var title1 = document.getElementById("title1");
+  var title2 = document.getElementById("title2");
+  var title3 = document.getElementById("title3");
+
+  if (viewportWidth < 768) {
+    title1.textContent = "IIM";
+    title2.textContent = "";
+    title3.textContent = "";
+  } else {
+    title1.textContent = "Idea";
+    title2.textContent = "Incubator";
+    title3.textContent = "MGIT";
+  }
+}
+
+// Call the function initially
+updateTitles();
+
+// Listen for window resize events and update the titles accordingly
+window.addEventListener("resize", updateTitles);
+
+
+
+
 //Wave Animation on Scroll
 let wave1 = document.getElementById('wave1')
 let wave2 = document.getElementById('wave2')
