@@ -154,6 +154,7 @@ input[type=checkbox]{
     text-align: center;
 }
 
+
 .main-title h1{
     font-size: 150px;
 }
@@ -233,6 +234,15 @@ input[type=checkbox]{
     }
 
 }
+
+/* 1.mobile view for text:'Idea incumator MGIT'*/
+@media screen and (max-width: 767px) {
+    .wave-title h1 {
+      font-size:105px;
+    }
+  }
+
+
 
 /* Sections */
 #About_us{
@@ -629,7 +639,6 @@ input[type=checkbox]{
     }
 
     
-
     .hamburger{
         color: #F5BB00;
         cursor: pointer;
