@@ -43,9 +43,9 @@ function updateTitles() {
   var title3 = document.getElementById("title3");
 
   if (viewportWidth < 768) {
-    title1.textContent = "IIM";
-    title2.textContent = "";
-    title3.textContent = "";
+    title1.textContent = "_";
+    title2.textContent = "IIM";
+    title3.textContent = "_";
   } else {
     title1.textContent = "Idea";
     title2.textContent = "Incubator";
