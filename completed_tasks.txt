@@ -1,2 +1,8 @@
 Fill this with the completed tasks
 -->>
+
+1. Fixed mobile viewport problem.
+    fix:
+
+    in the main-title class I have made it so that the printed text changes from the full form of IIM to just IIM on smaller viewports.
+     
